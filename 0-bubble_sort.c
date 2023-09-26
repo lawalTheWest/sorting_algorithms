@@ -1,6 +1,11 @@
 #include "sort.h"
 
-
+/**
+ * swap_element - Entry point
+ * @array: the array
+ * @a: index count
+ * @b: index count
+ */
 void swap_element(int *array, int a, int b)
 {
 	int temp; /* Temporary containeter */
