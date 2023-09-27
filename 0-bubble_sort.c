@@ -6,7 +6,7 @@
  * @a: index count
  * @b: index count
  */
-/*void swap_element(int *array, int a, int b)
+void swap_element(int *array, int a, int b)
 {
 	int temp;
 
@@ -14,7 +14,7 @@
 	array[a] = array[b];
 	array[b] = temp;
 
-} * end function */
+} /* end function */
 
 /**
  * bubble_sort - Entry point to bubble sort
@@ -27,7 +27,6 @@ void bubble_sort(int *array, size_t size)
 	size_t a; /* counter1 */
 	size_t b; /* counter2 */
 	int swapped; /* to check if two int(s) have been swapped */
-	int temp;
 
 	/* Valoidate parameters */
 	if (array == NULL || size < 2)
@@ -35,23 +34,22 @@ void bubble_sort(int *array, size_t size)
 		return;
 	} /* End if */
 
+	/* printf("the size of the array = %ld\n", size); */
+
 	/* Iterate through the array */
-	for (a = 0; a < (size - 1); a++)
+	for (a = 0; a < size - 1; a++)
 	{
 		swapped = 0;
 
-		for (b = 0; b < (size - (a - 1)); b++)
+		for (b = 0; b < size - 1 - a; b++)
 		{
 			/* Compare and swap elements */
 			if (array[b + 1] < array[b])
 			{
 				/* commit the swapping */
-				/*swap_element(array, b, b + 1);*/
-				temp = array[a];
-				array[a] = array[b];
-				array[b] = temp;
-
+				swap_element(array, b, b + 1);
 				print_array(array, size);
+
 				/* to indicate a swap */
 				swapped = 1;
 			} /* End if */
