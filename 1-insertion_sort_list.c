@@ -4,7 +4,7 @@
 /**
  * insertion_sort_list - Entry point
  * Description: 'Sorts a doubly linked list of integers
- * 	in ascending order'
+ * in ascending order'
  * @list: the list to be sorted
  */
 void insertion_sort_list(listint_t **list)
