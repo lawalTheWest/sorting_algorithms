@@ -31,4 +31,8 @@ void insertion_sort_list(listint_t **list);
 
 /* Task #2 */
 void selection_sort(int *array, size_t size);
+
+/* Task #3 */
+void quick_sort(int *array, size_t size);
+
 #endif
