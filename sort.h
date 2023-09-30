@@ -34,5 +34,6 @@ void selection_sort(int *array, size_t size);
 
 /* Task #3 */
 void quick_sort(int *array, size_t size);
+void quick_sort_lomuto(int *array, size_t low, size_t high, size_t size);
 
 #endif
