@@ -1,8 +1,9 @@
 #include "sort.h"
 
+
 /**
  * shell_sort - Entry point to the shell sort algo
- * @array: array
+i * @array: array
  * @size: size of array.
  */
 void shell_sort(int *array, size_t size)
@@ -12,9 +13,11 @@ void shell_sort(int *array, size_t size)
 	/* Validate parameters */
 	if ((array == NULL) || (size < 2))
 		return;
+
 	/* Calculate initial gap using the Knuth sequence */
 	while (gap <= ((int)size / 3))
 		gap = (gap * 3) + 1;
+
 	/* Iterate through gap */
 	for (; gap > 0; )
 	{
