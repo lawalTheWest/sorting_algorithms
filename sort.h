@@ -39,4 +39,7 @@ void quick_sort_lomuto(int *array, size_t low, size_t high, size_t size);
 /* Task #4 */
 void shell_sort(int *array, size_t size);
 
+/* Task #5 */
+void cocktail_sort_list(listint_t **list);
+
 #endif
