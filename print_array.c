@@ -1,18 +1,15 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 /**
- * print_array - Prints an array of integers
- *
- * @array: The array to be printed
- * @size: Number of elements in @array
+ * print_array - Prints an array of integers.
+ * @array: The array to be printed.
+ * @size: Number of elements in @array.
  */
 void print_array(const int *array, size_t size)
 {
-	size_t i;
+	size_t i = 0;
 
-	i = 0;
-	while (array && i < size)
+	while ((array != NULL) && (i < size))
 	{
 		if (i > 0)
 			printf(", ");
